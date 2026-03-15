@@ -50,50 +50,7 @@ Server Environment
 
 ---
 
-# Project Structure
 
-```
-# Project Structure
-
-```
-Register-Login/
-│
-├── config
-│   └── db.php                # Database connection
-│
-├── css
-│   └── style.css             # Website styling
-│
-├── js
-│   ├── login.js              # Login form validation
-│   └── register.js           # Registration form validation
-│
-├── pages
-│   ├── login.html            # Login page
-│   ├── register.html         # Employee registration page
-│   └── user-board.php        # Employee dashboard
-│
-├── php
-│   ├── login.php             # Login authentication logic
-│   ├── logout.php            # Destroy session and logout
-│   └── save_register.php     # Save employee registration data
-│
-└── index.php                 # Homepage
-```
-
-```
-
----
-
-# Database Structure
-
-Create a database named:
-
-```
-
-
-
----
 
 # Installation Guide
 
