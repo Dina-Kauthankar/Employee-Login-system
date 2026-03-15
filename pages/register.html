@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Employee Registration</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Register Now</h2>
+
+        <form action="../php/save_register.php" method="post">
+
+            <!-- Name -->
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <br>
+
+            <!-- Gender -->
+            <fieldset>
+                <legend>Gender</legend>
+
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Age -->
+            <div>
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" min="18" max="60" placeholder="Enter your age" required>
+            </div>
+
+            <br>
+
+            <!-- Role -->
+            <div>
+                <label for="role">Role</label><br>
+
+                <select name="role" id="role" required>
+                    <option value="">Select Role</option>
+                    <option value="HR">HR</option>
+                    <option value="CEO">CEO</option>
+                    <option value="Staff Member">Staff Member</option>
+                    <option value="Manager">Manager</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Salary -->
+            <div>
+                <label for="salary">Salary</label><br>
+                <input type="number" name="salary" id="salary" placeholder="Enter salary" required>
+            </div>
+
+            <br>
+
+            <!-- Password -->
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                <p id="p-change" hidden></p>
+            </div>
+
+            <br>
+
+            <!-- Submit -->
+            <div>
+                <input type="submit" value="Register">
+            </div>
+
+        </form>
+        <a href="login.html">login</a>
+
+    </main>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Employee Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../php/login.php" method="post">
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <p id="email-error" hidden></p>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                <p id="password-error" hidden></p>
+            </div>
+
+            <br>
+
+            <!-- Submit -->
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </main>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
